@@ -5,6 +5,9 @@ import { defineConfig } from "vite";
 const rootDir = fileURLToPath(new URL(".", import.meta.url));
 
 export default defineConfig({
+  preview: {
+    allowedHosts: ["b35rhsy6xns3wwv9hpb12dee.51.68.130.22.sslip.io"]
+  },
   build: {
     rollupOptions: {
       input: {
